@@ -6,7 +6,7 @@ prepare-repo:
 
 install-deps:
 	flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-	flatpak --user install flathub org.freedesktop.Platform/x86_64/1.6 org.freedesktop.Sdk/x86_64/1.6
+	flatpak --user install flathub org.gnome.Platform/x86_64/3.26 org.gnome.Sdk/x86_64/3.26
 
 build:
 	flatpak-builder --force-clean --ccache --require-changes --repo=repo \
