@@ -9,6 +9,7 @@ install-deps:
 	flatpak --user install flathub org.gnome.Platform/x86_64/3.26 org.gnome.Sdk/x86_64/3.26
 
 build:
+	curl https://raw.githubusercontent.com/gnunn1/tilix/master/experimental/flatpak/0001-Enable-flatpak.patch -O 
 	flatpak-builder --force-clean --ccache --require-changes --repo=repo \
 		--subject="Nightly build of Tilix, `date`" \
 		${EXPORT_ARGS} app com.gexperts.Tilix.json

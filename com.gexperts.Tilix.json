@@ -63,7 +63,7 @@
                                 },
                                 {
                                         "type": "patch",
-                                        "path": "https://raw.githubusercontent.com/gnunn1/tilix/master/experimental/flatpak/0001-Enable-flatpak.patch",
+                                        "path": "0001-Enable-flatpak.patch",
                                         "use-git": true
                                 }
                        ]
