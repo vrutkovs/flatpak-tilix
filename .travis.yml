@@ -19,7 +19,7 @@ before_cache:
 script:
   - mkdir -p .cache
   - "tar --xattrs --xattrs-include=* -xf .cache/cache.tar || true"
-  - docker run --privileged -v ${PWD}:/source -i vrutkovs/flatpak:test make -C source/
+  - docker run --privileged -v ${PWD}:/source -i vrutkovs/flatpak make -C source/
 
 before_deploy:
   - rm -rf export && mkdir export
